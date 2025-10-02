@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Rock, Paper, Scissors</title>
+<style>
+    .center {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1 style="text-align: center">{{ result.name }}</h1>
+    <h2 style="text-align: center">You chose: {{ player_choice.name }}</h2>
+    <h2 style="text-align: center">Computer chose: {{ computer_choice.name }}</h2>
+</div>
+
+<div class="center">   
+    <form action="/">
+        <input type="submit" value="Play Again">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Rock, Paper, Scissors</title>
+<style>
+    .center {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+</div>
+
+    <h1 style="text-align: center">Choose an option</h1>
+
+    <div class="center">
+        <form action="/rock/">
+            <button type="submit" name="choice" value="ROCK">Rock</button>
+        </form>
+        <br>
+        <form action="/paper/">
+            <button type="submit" name="choice" value="PAPER">Paper</button>
+        </form>
+        <br>
+        <form action="/scissors/">
+            <button type="submit" name="choice" value="SCISSORS">Scissors</button>
+        </form>
+    </div>
+    
+</div>
+{% endblock %}
