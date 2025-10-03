@@ -23,11 +23,7 @@ def evaluate_result(player_choice, computer_choice):
         return Result.LOSS
     elif player_choice == Choice.SCISSORS and computer_choice == Choice.ROCK:
         return Result.LOSS
-    elif player_choice == Choice.ROCK and computer_choice == Choice.SCISSORS:
-        return Result.WIN
-    elif player_choice == Choice.SCISSORS and computer_choice == Choice.PAPER:
-        return Result.WIN
-    elif player_choice == Choice.PAPER and computer_choice == Choice.ROCK:
+    else:
         return Result.WIN
 
 def play(player_choice):
